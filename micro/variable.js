@@ -19,3 +19,6 @@ accountPassword="172"
 accountCity="nawada"
   console.log(accountId)
   console.table([accountId, accountEmail, accountPassword,accountCity,accountState])
+
+
+  
