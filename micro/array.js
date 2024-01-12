@@ -6,19 +6,19 @@
 // const myArray2= new Array (1,2,3,4)
 // console.log(myArray2[0]);
 // myArray.push(12);
-// // myArray.pop(0);
-// myArray.shift();
-// console.log(myArray.includes(88))
-// console.log(myArray);
+// myArray.pop(0);
+myArray.shift();
+console.log(myArray.includes(88))
+console.log(myArray);
 
-// const myn1=myArray.slice(1,3)
-// console.log(myn1);
+const myn1=myArray.slice(1,3)
+console.log(myn1);
 
-// console.log("B",myArray);
+console.log("B",myArray);
 
-// const myn2=myArray.splice(1,3);
-// console.log("C",myArray);
-// console.log(myn2);
+const myn2=myArray.splice(1,3);
+console.log("C",myArray);
+console.log(myn2);
 
 
 // ++++++++++++++++++newarray series  ***************
