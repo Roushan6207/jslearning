@@ -20,4 +20,33 @@ function loginuser(username="gulshan"){
 }
 
 
-console.log(loginuser("roushan")); 
+// console.log(loginuser("roushan")); 
+
+
+//@@@ second day  of function ************
+
+ function calculatecartprice(...numb){
+    return numb;
+ }
+
+ //console.log(calculatecartprice(200,300,700,800));
+
+
+ const user={
+    username:"roushan",
+    price:100,
+ }
+
+ function handleObject(anyobject){
+    //console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+ }
+
+ handleObject({
+    username:"gulshan",
+    price:2309
+ })
+
+  
+
+
+
