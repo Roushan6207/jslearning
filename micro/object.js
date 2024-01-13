@@ -70,11 +70,23 @@ const obj3={5:"a",6:"b"}
 const obj4={...obj1,...obj2}
 // console.log(obj4)
 
-// console.log(Object.keys(tinderuser));
-// console.log(Object.values(tinderuser));
-// console.log(Object.entries(tinderuser));
 
-console.log(tinderuser.hasOwnProperty('isloggedin'));
+
+// console.log(tinderuser.hasOwnProperty('isloggedin')
+
+// *********** new start ^^^^^^^^^^
+
+
+const course={
+  price:"99",
+  courseInstructor:"roushan"
+}
+
+const {courseInstructor:raush}=course
+
+// console.log(raush);
+
+
 
 
 
