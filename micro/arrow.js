@@ -25,6 +25,20 @@ const addtwo=(numb1,numb2) =>  (numb1+numb2)
 // ######## second leture  ^^^^^^^^^ 
  // immediately invoked function expression (IIFE)
 
+
+  (function chai(){
+    console.log(Db);
+  }) ();
+//  console.log(chai())
+
+(function two(){
+    //console.log(Disaster);
+  }) ()
+
+  let use= "roushan"
+  //console.log(use)
+
+
  
 
 
