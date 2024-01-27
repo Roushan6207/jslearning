@@ -6,10 +6,28 @@
     <title>DOM | chai aur code</title>
 </head>
 <body style="background-color: #212121;color:#fff;">
+    <div class="parent">
+    
     <diV class="day"> monday</diV>
     <diV class="day"> tuesday</diV>
     <diV class="day"> thursday</diV>
     <diV class="day"> friday</diV>
+</div>
     
 </body>
+<script>
+    const parent= document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+        
+    // }
+    const dayOne=document.querySelector('.day')
+    //console.log(dayOne.nextElementSibling);
+    console.log("NODES:",parent.childNodes);
+
+
+</script>
+
 </html>
