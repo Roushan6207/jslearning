@@ -12,7 +12,39 @@
     
 </body>
 <script>
-    function addlanguage(){}
+    function addlanguage(langName){
+        const li=document.createElement('li');
+        li.innerHTML=`${langName}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+
+    addlanguage("c++")
+    addlanguage("java")
+
+     function addoptlanguage(langName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+     }
+     addoptlanguage("roshan")
+
+     // edit ^^^^^^^^^^^
+       const secondlang=document.querySelector("li:nth-child(2)")
+       //secondlang.innerHtml="mojo"
+       const newli=document.createElement('li')
+       newli.textContent="mojo"
+       secondlang.replaceWith(newli)
+
+
+       // edit
+       const firstlang=document.querySelector("li:first-child")
+      firstlang.outerHTML='<li>typescript</li>'
+
+      // remove
+      const lastlang=document.querySelector('li:last-child')
+
+      lastlang.remove()
 </script>
 
 </html>
