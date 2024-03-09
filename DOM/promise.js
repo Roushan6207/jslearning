@@ -34,48 +34,74 @@
 //  })
 
 
- const promiseFour=new Promise(function(resolve,reject){
-    setTimeout(function(){
-        let error=false
-        if(!error){
-            resolve({username:"roushan",password:"853980"})
-        }
-        else{
-            reject("erroe is there");
-        }
+//  const promiseFour=new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         let error=false
+//         if(!error){
+//             resolve({username:"roushan",password:"853980"})
+//         }
+//         else{
+//             reject("erroe is there");
+//         }
 
-    },1000)
- })
+//     },1000)
+//  })
 
 
 
- promiseFour
- .then((user)=>{
-    console.log(user);
-    return user.username
- })
- .then((username)=>{
-    console.log(username);
+//  promiseFour
+//  .then((user)=>{
+//     console.log(user);
+//     return user.username
+//  })
+//  .then((username)=>{
+//     console.log(username);
 
- })
- .catch(function(error){
-    console.log(error);
- })
- .finally(()=>console.log("the promise is either resolved or rejcted"))
+//  })
+//  .catch(function(error){
+//     console.log(error);
+//  })
+//  .finally(()=>console.log("the promise is either resolved or rejcted"))
 
 
  const promiseFive=new Promise(function(resolve,reject){
     setTimeout(function(){
-        let error=false
+        let error=true
         if(!error){
-            resolve({username:"roushan",password:"853980"})
+            resolve({username:"javascript",password:"456778"})
         }
         else{
-            reject("erroe is there");
+            reject("error in the js");
         }
 
     },1000)
 
 
  })
+
+ async function consumepromisefive(){
+    try {
+        const response=await promiseFive
+         console.log(response);
+    } catch (error) {
+        console.log(error);
+        
+    }
+ }
+
+ consumepromisefive()
+
+
+fetch('https://api.github.com/users/Roushan6207')
+.then((response)=>{
+    return response.json()
+})
+.then((data)=>{
+    console.log(data)
+})
+.catch((error)=>console.log(error));
+
+
+
+
  
