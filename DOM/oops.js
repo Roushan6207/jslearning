@@ -19,3 +19,17 @@ const user={
 
 
 // constructor functions ??????????
+
+function User(username,loginCount,isLoggedIn ){
+    this.username=username;
+    this.loginCount=loginCount;
+    this.isLoggedIN=isLoggedIn;
+    this.greeting=function(){
+        console.log(`welcome ${this.username}`);
+    }
+
+    return this
+}
+const userOne=new User("roushan",3,false);
+const userTwo= new User("roushan",4,true);
+console.log(userOne.constructor);
